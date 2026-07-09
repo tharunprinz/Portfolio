@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const VALUES = [
-  { num: "01", title: "Ship fast, iterate faster",  body: "Good code shipped today beats perfect code next month." },
-  { num: "02", title: "Understand before building", body: "Read the docs, dig through source code, ask why before how." },
-  { num: "03", title: "Systems over hacks",         body: "Build the right foundation — don't patch the same bug twice." },
-  { num: "04", title: "Always a student",           body: "Every codebase is a lesson. Every bug is a teacher." },
+  { num: "01", title: "Build with Purpose",  body: "Create solutions that are practical, scalable, and built to make an impact." },
+  { num: "02", title: "Learn Beyond the Surface", body: "Go deeper than tutorials—understand how systems work and why they work that way." },
+  { num: "03", title: "Security-First Mindset",         body: "Strong applications aren't just functional; they're designed with reliability and security in mind." },
+  { num: "04", title: "Growth Never Stops",           body: "Every project, challenge, and mistake is an opportunity to learn something new and become better." },
 ];
 
 export default function ChapterWhatDrivesMe() {
@@ -40,7 +40,7 @@ export default function ChapterWhatDrivesMe() {
             className="chapter-title leading-[0.88]"
             style={{ fontSize: "clamp(3rem, 11vw, 11rem)", color: "var(--text-primary)" }}
           >
-            Eager to
+            Curiosity
           </motion.h2>
         </div>
         <div className="overflow-hidden mb-10">
@@ -52,7 +52,7 @@ export default function ChapterWhatDrivesMe() {
             className="chapter-title leading-[0.88]"
             style={{ fontSize: "clamp(3rem, 11vw, 11rem)", color: "var(--accent)" }}
           >
-            learn. Always.
+            fuels everything.
           </motion.h2>
         </div>
 
@@ -75,9 +75,7 @@ export default function ChapterWhatDrivesMe() {
           className="body-copy text-lg sm:text-xl max-w-2xl mb-16"
           style={{ color: "var(--text-secondary)" }}
         >
-          That&apos;s not a resume line — it&apos;s an operating system. I can&apos;t sit with
-          &quot;good enough.&quot; If something interests me, I go from zero to deep-dive in
-          about 48 hours flat.
+          I believe the best growth happens outside the comfort zone. Whether it&apos;s a new technology, a security challenge, or a complex problem, I&apos;m always eager to explore, learn, and improve.
         </motion.p>
 
         {/* Values — horizontal rule list */}

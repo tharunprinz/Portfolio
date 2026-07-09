@@ -3,9 +3,12 @@
 import { motion } from "framer-motion";
 
 const HOBBIES = [
-  "PC Building", "Troubleshooting", "PCB Explorer", "PlayStation",
-  "Origami", "3D Art", "2D Illustration", "Skating",
+  "Rubik's Cube Solver", "Troubleshooting", "Infotainment Content Creator", "Dancer", "Video Editor"
 ];
+
+function getHobbyId(hobby: string) {
+  return hobby.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-").replace(/\//g, "-");
+}
 
 export default function ChapterBeyondScreen() {
   return (
@@ -50,7 +53,7 @@ export default function ChapterBeyondScreen() {
             className="chapter-title leading-[0.88]"
             style={{ fontSize: "clamp(3rem, 11vw, 11rem)", color: "var(--accent)" }}
           >
-            part of it.
+            part of the story.
           </motion.h2>
         </div>
 
@@ -63,19 +66,18 @@ export default function ChapterBeyondScreen() {
           className="body-copy text-lg sm:text-xl max-w-2xl mb-16"
           style={{ color: "var(--text-secondary)" }}
         >
-          When the terminal is closed — building PCs, folding paper, skating, painting,
-          exploring circuits. Here&apos;s what makes me something more than a developer.
+          When the IDE is closed, you&apos;ll find me solving Rubik&apos;s Cubes, creating content, editing videos, dancing, and breaking down complex ideas into something people can actually enjoy. These hobbies sharpen the same skills I use as a developer — creativity, problem-solving, and continuous improvement.
         </motion.p>
 
         {/* Hobby grid — text only, hover orange */}
         <div
-          className="grid grid-cols-2 sm:grid-cols-4 border-l border-t w-full"
+          className="grid grid-cols-2 sm:grid-cols-5 border-l border-t w-full"
           style={{ borderColor: "var(--border)" }}
         >
           {HOBBIES.map((hobby, i) => (
             <motion.a
               key={hobby}
-              href={`#${hobby.toLowerCase().replace(/\s+/g, "-").replace(/\//g, "-")}`}
+              href={`#${getHobbyId(hobby)}`}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -104,7 +106,7 @@ export default function ChapterBeyondScreen() {
 
         {/* CTA */}
         <motion.a
-          href="#pc-building"
+          href="#rubiks-cube-solver"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

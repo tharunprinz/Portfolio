@@ -18,22 +18,22 @@ interface OverlaySection {
 const sections: OverlaySection[] = [
   {
     id: "hero",
-    title: "Rathan K.",
-    subtitle: "Full-Stack & DevOps Developer",
+    title: "Tharun R.",
+    subtitle: "Aspiring Software Engineer",
     align: "center",
     scrollStart: 0.0,
     scrollEnd: 0.22,
   },
   {
     id: "vision",
-    title: "Building secure,\nscalable apps.",
+    title: "Building scalable,\nimpactful apps.",
     align: "left",
     scrollStart: 0.26,
     scrollEnd: 0.46,
   },
   {
     id: "bridge",
-    title: "Streamlining delivery\nwith DevOps.",
+    title: "Full-stack from\nidea to deploy.",
     align: "right",
     scrollStart: 0.54,
     scrollEnd: 0.74,

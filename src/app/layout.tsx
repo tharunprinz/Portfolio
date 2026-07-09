@@ -24,15 +24,15 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Rathan — Creative Developer",
+  title: "Tharun R — Software Engineer",
   description:
-    "Portfolio of Rathan — a creative developer building premium digital experiences at the intersection of design and engineering.",
-  keywords: ["creative developer", "portfolio", "web development", "design", "Rathan"],
-  authors: [{ name: "Rathan" }],
+    "Portfolio of Tharun R — an aspiring Software Engineer skilled in full-stack development with Java, Spring Boot, React.js, Node.js, MongoDB, and MySQL. Building impactful technology solutions.",
+  keywords: ["software engineer", "portfolio", "full-stack developer", "React", "Spring Boot", "Tharun R"],
+  authors: [{ name: "Tharun R" }],
   openGraph: {
-    title: "Rathan — Creative Developer",
+    title: "Tharun R — Software Engineer",
     description:
-      "Building premium digital experiences at the intersection of design and engineering.",
+      "Aspiring Software Engineer building scalable full-stack applications and impactful technology solutions.",
     type: "website",
   },
 };

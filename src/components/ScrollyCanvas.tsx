@@ -11,10 +11,11 @@ import Overlay from "./Overlay";
 /* ──────────────────────────────────────────────
    Config
    ────────────────────────────────────────────── */
-const TOTAL_FRAMES = 46;
+const TOTAL_FRAMES = 47; // frame1.png + 46 numbered frames
 
 function getFramePath(index: number): string {
-  const padded = String(index).padStart(2, "0");
+  if (index === 0) return "/sequence/frame1.png";
+  const padded = String(index - 1).padStart(2, "0");
   return `/sequence/frame_${padded}_delay-0.066s.png`;
 }
 

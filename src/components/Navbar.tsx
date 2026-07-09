@@ -10,7 +10,7 @@ const NAV_ITEMS = [
   { id: 1, tile: "About", href: "#who-i-am" },
   { id: 2, tile: "Projects", href: "#projects" },
   { id: 3, tile: "Skills", href: "#skills-tools" },
-  { id: 4, tile: "Resume", href: "/Rathan.pdf", download: true },
+  { id: 4, tile: "Resume", href: "/Tharun.pdf", download: true },
   { id: 5, tile: "Contact", href: "#contact" },
 ];
 
@@ -37,7 +37,7 @@ export default function Navbar() {
             className="group relative flex items-center gap-2 shrink-0"
           >
             <span className="text-[15px] sm:text-[17px] font-semibold tracking-tight text-white/90">
-              Rathan K
+              Tharun R
             </span>
           </a>
 

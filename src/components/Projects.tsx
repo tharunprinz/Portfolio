@@ -10,44 +10,39 @@ interface Project {
   description: string;
   tech: string[];
   year: string;
+  github?: string;
 }
 
 const projects: Project[] = [
   {
     id: "01",
-    title: "Kata-Sync",
-    category: "Browser Extension",
+    title: "DEVFOLIO AI",
+    category: "AI Platform",
     description:
-      "A productivity-focused browser extension designed to help developers synchronize coding practice, notes, and progress across platforms in a structured, distraction-free way.",
-    tech: ["JavaScript", "HTML", "CSS", "Chrome API"],
-    year: "2025",
+      "AI-Powered Developer Portfolio & Resume Generator — a full-stack AI platform using React, Spring Boot, MongoDB, GitHub OAuth, and Google Gemini AI to automatically generate developer portfolios and resumes from GitHub repositories. Reduces manual profile-building effort by 70%.",
+    tech: ["React", "Spring Boot", "MongoDB", "GitHub OAuth", "Google Gemini AI"],
+    year: "2026",
+    github: "https://github.com/tharunprinz",
   },
   {
     id: "02",
-    title: "DevSecOps Portal",
-    category: "Web Application",
+    title: "GITPEN-AI",
+    category: "Security Tool",
     description:
-      "Full-stack Employee Management Portal with secure authentication, analytics, and role-based access control, deployed via a GitOps CI/CD pipeline.",
-    tech: ["React", "Node.js", "Docker","Github Actions", "Kubernetes", "ArgoCD","Trivy", "Prometheus", "Grafana"],
-    year: "2026",
+      "AI-Powered GitHub Repository Analyzer — an AI-powered GitHub security scanner using React, Node.js, MongoDB, Gemini AI, and Groq API. Reduces manual code review effort by 60% with security scoring, AI-based file analysis, and caching that improves scan speed by 40%.",
+    tech: ["React", "Node.js", "MongoDB", "Gemini AI", "Groq API"],
+    year: "2025",
+    github: "https://github.com/tharunprinz",
   },
   {
     id: "03",
-    title: "Staffbase System",
-    category: "Enterprise System",
+    title: "Snack Box",
+    category: "Web Application",
     description:
-      "Secure full-stack employee record management with JWT authentication, REST APIs, and a relational database backend.",
-    tech: ["Java", "Spring Boot", "React", "PostgreSQL", "JWT"],
+      "Smart food ordering platform with billing, QR payments, and admin analytics. Modern food ordering website built with React & Vite featuring menu management, shopping cart, QR code payments, bill printing, sales reports, and responsive design.",
+    tech: ["React", "Vite", "QR Payments", "Admin Analytics"],
     year: "2025",
-  },
-  {
-    id: "04",
-    title: "ESP32 AI Chatbot",
-    category: "IoT & Hardware",
-    description:
-      "AI-powered chatbot running on an ESP32-C3 Mini — Wi-Fi communication and embedded web technologies for real-time conversational interaction.",
-    tech: ["ESP32", "C/C++", "IoT", "REST API"],
-    year: "2023",
+    github: "https://github.com/tharunprinz/Snacks-Box",
   },
 ];
 
@@ -184,12 +179,15 @@ function ProjectPanel({ project }: { project: Project }) {
         </div>
 
         {/* CTA */}
-        <span
+        <a
+          href={project.github ?? "https://github.com/tharunprinz"}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-[11px] tracking-[0.2em] uppercase cursor-pointer transition-opacity duration-200 hover:opacity-60"
           style={{ color: "var(--accent)", fontFamily: "var(--font-body)" }}
         >
-          Github for SourceCode →
-        </span>
+          View on GitHub →
+        </a>
       </div>
     </div>
   );
@@ -199,7 +197,7 @@ export default function Projects() {
   const targetRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-82%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-86%"]);
 
   return (
     <section ref={targetRef} id="projects" className="relative h-[400vh]">

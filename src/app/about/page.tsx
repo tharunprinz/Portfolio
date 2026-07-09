@@ -4,12 +4,12 @@ import AboutChapters from "@/components/about/AboutChapters";
 import HobbiesChapters from "@/components/hobbies/HobbiesChapters";
 
 export const metadata: Metadata = {
-  title: "About — Rathan K",
+  title: "About — Tharun R",
   description:
-    "The full story of Rathan K — who he is, what drives him, his skills, timeline, and all his hobbies from PC building to origami.",
+    "The full story of Tharun R — who he is, what drives him, his skills, and all his hobbies from Rubik's cube solving to video editing.",
   openGraph: {
-    title: "About — Rathan K",
-    description: "Get to know Rathan K beyond the resume.",
+    title: "About — Tharun R",
+    description: "Get to know Tharun R beyond the resume.",
     type: "website",
   },
 };

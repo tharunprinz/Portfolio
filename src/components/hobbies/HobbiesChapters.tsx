@@ -1,26 +1,20 @@
 import {
-  HobbyPCBuilding,
+  HobbyRubiksCube,
   HobbyTroubleshooting,
-  HobbyPCB,
-  HobbyPlayStation,
-  HobbyOrigami,
-  Hobby3DArtist,
-  HobbyArtist2D,
-  HobbySkater,
+  HobbyContentCreator,
+  HobbyDancer,
+  HobbyVideoEditor,
   HobbyPhilosophy,
 } from "@/components/hobbies/HobbySections";
 
 export default function HobbiesChapters() {
   return (
     <>
-      <HobbyPCBuilding />
+      <HobbyRubiksCube />
       <HobbyTroubleshooting />
-      <HobbyPCB />
-      <HobbyPlayStation />
-      <HobbyOrigami />
-      <Hobby3DArtist />
-      <HobbyArtist2D />
-      <HobbySkater />
+      <HobbyContentCreator />
+      <HobbyDancer />
+      <HobbyVideoEditor />
       <HobbyPhilosophy />
     </>
   );

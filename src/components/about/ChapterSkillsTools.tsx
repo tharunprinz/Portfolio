@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 
 const SKILL_CATEGORIES = [
-  { category: "Frontend",       skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS", "Framer Motion"] },
-  { category: "Backend",        skills: ["Node.js", "Java", "Spring Boot", "REST APIs", "Python", "C"] },
-  { category: "Database",       skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis"] },
-  { category: "DevOps & Cloud", skills: ["Docker", "Kubernetes", "ArgoCD", "GitOps", "CI/CD", "Git"] },
-  { category: "Hardware & IoT", skills: ["ESP32", "IoT Systems", "PCB Reading", "Arduino"] },
+  { category: "Languages",               skills: ["Java", "Python", "C++", "JavaScript", "HTML", "CSS"] },
+  { category: "Frontend & UI",           skills: ["React", "Framer Motion", "HTML", "CSS", "JavaScript"] },
+  { category: "Backend",                 skills: ["Node.js", "Express.js", "Spring Boot"] },
+  { category: "Databases",               skills: ["MongoDB", "MySQL"] },
+  { category: "Tools & Platforms",       skills: ["Git", "GitHub", "VS Code", "IntelliJ IDEA", "Postman"] },
+  { category: "Cloud & OS",              skills: ["Microsoft Azure", "Linux"] },
 ];
 
 const ALL_SKILLS = SKILL_CATEGORIES.flatMap((c) => c.skills);

@@ -45,7 +45,7 @@ export default function ChapterWhoIAm() {
               color: "var(--text-primary)",
             }}
           >
-            Hi, I&apos;m
+            This is
           </motion.h1>
         </div>
         <div className="overflow-hidden mb-10">
@@ -60,7 +60,7 @@ export default function ChapterWhoIAm() {
               color: "var(--accent)",
             }}
           >
-            Rathan 
+            Tharun R
           </motion.h1>
         </div>
 
@@ -87,16 +87,13 @@ export default function ChapterWhoIAm() {
               className="body-copy text-lg sm:text-xl leading-relaxed mb-4"
               style={{ color: "var(--text-secondary)" }}
             >
-              Computer Science undergraduate at Karpagam College of Engineering.
-              The kind of person who gets genuinely excited when a CI/CD pipeline
-              finally deploys without a single error at 2&nbsp;AM.
+              Information Technology undergraduate at Karpagam College of Engineering. Driven by a passion for building digital products and understanding how they can be secured against real-world threats.
             </p>
             <p
               className="body-copy text-base leading-relaxed"
               style={{ color: "var(--text-muted)" }}
             >
-              I build full-stack applications, automate everything I can, and chase
-              the perfect balance between elegant code and real-world reliability.
+              I create scalable full-stack applications, explore cybersecurity challenges, and enjoy turning complex ideas into secure, reliable, and impactful solutions.
             </p>
           </motion.div>
 
@@ -109,9 +106,9 @@ export default function ChapterWhoIAm() {
             className="flex flex-row lg:flex-col gap-10 lg:gap-8 shrink-0"
           >
             {[
-              { value: "8.5",     label: "CGPA" },
-              { value: "20+",      label: "Projects" },
-              { value: "2023–27", label: "B.E. CS" },
+              { value: "7.1",     label: "CGPA" },
+              { value: "10+",      label: "Projects" },
+              { value: "2023-27", label: "B.Tech IT" },
             ].map((s, i) => (
               <div key={s.label} className="flex flex-col gap-1">
                 <span

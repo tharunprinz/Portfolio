@@ -25,21 +25,21 @@ type Stat =
   | { type: "number"; value: number; decimals?: number; suffix?: string; label: string };
 
 const stats: Stat[] = [
-  { type: "text", value: "B.E. CS", label: "Karpagam College" },
-  { type: "number", value: 8.5, decimals: 1, label: "CGPA (2023-2027)" },
-  { type: "number", value: 4, suffix: "+", label: "Key Projects" },
-  { type: "number", value: 4, label: "Certifications" },
+  { type: "text", value: "B.Tech IT", label: "Karpagam College" },
+  { type: "number", value: 7.09, decimals: 2, label: "CGPA (2023-2027)" },
+  { type: "number", value: 2, suffix: "+", label: "Key Projects" },
+  { type: "number", value: 1, label: "Azure Certification" },
 ];
 
 const skills = [
   "React.js / Node.js",
   "Java / Spring Boot",
-  "Tailwind CSS / HTML5",
-  "Docker / Kubernetes",
-  "ArgoCD / GitOps",
-  "SQL / MongoDB",
-  "Python / C",
-  "IoT / ESP32",
+  "JavaScript ES6+",
+  "MongoDB / MySQL",
+  "HTML5 / CSS3",
+  "Python / C++",
+  "Microsoft Azure",
+  "Git / GitHub",
 ];
 
 /* ──────────────────────────────────────────────
@@ -254,10 +254,10 @@ export default function About() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-blue-500/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000 blur-3xl pointer-events-none" />
 
             <motion.p variants={itemVariants} className="text-lg sm:text-xl md:text-3xl font-light leading-relaxed text-white/70 max-w-4xl">
-              I'm a detail-oriented Computer Science undergraduate with hands-on experience in full-stack web development and DevOps. I focus on building secure, scalable, and maintainable applications.
+              I&apos;m an aspiring Software Engineer with hands-on experience in full-stack application development using Java, Spring Boot, React.js, Node.js, MongoDB, and MySQL.
             </motion.p>
             <motion.p variants={itemVariants} className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed text-white/40 max-w-4xl">
-              I am experienced in Git-based workflows, project-driven development, and implementing CI/CD pipelines to streamline software delivery. I am committed to delivering high-quality, robust solutions.
+              Skilled in building RESTful APIs, integrating third-party services, and developing scalable web applications. Passionate about problem-solving, software engineering, and creating impactful technology solutions.
             </motion.p>
           </TiltCard>
         </Container>
@@ -298,7 +298,7 @@ export default function About() {
                   Certifications
                 </h3>
                 <ul className="flex flex-col items-center gap-6">
-                  {["Networking Essentials", "SQL", "RestAPI", "REACT JS"].map((cert) => (
+                  {["Azure AZ-900 (Microsoft)", "AI Mastery (Udemy)", "Salesforce Agentblazer", "Bugcrowd Hall of Fame"].map((cert) => (
                     <li
                       key={cert}
                       className="text-base sm:text-lg font-light leading-relaxed text-white/70 flex items-center justify-center gap-3 text-center group-hover:text-white/90 transition-colors duration-300"

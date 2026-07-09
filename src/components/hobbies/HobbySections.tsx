@@ -127,17 +127,17 @@ function HobbySection({ id, label, line1, line2, accentLine, body1, body2, bg = 
    Individual hobby exports
    ───────────────────────────────────────────────────────────── */
 
-export function HobbyPCBuilding() {
+export function HobbyRubiksCube() {
   return (
     <HobbySection
-      id="pc-building"
-      label="Hobby — PC Building"
-      line1="I don't just use"
-      line2="computers. I build them."
+      id="rubiks-cube-solver"
+      label="Hobby — Rubik's Cube Solver"
+      line1="I don't just solve cubes."
+      line2="I solve patterns."
       accentLine={2}
       bg="var(--bg-surface)"
-      body1="There's something deeply satisfying about choosing every component — the CPU, cooler, RAM timings — and knowing exactly why you made each call. My first build took a weekend and three tutorials."
-      body2="The RGB is non-negotiable. Not because it makes the computer faster — it makes the desk look incredible at 2 AM when I'm still debugging."
+      body1="What looks like a scrambled puzzle is really a sequence of decisions waiting to be understood. Learning algorithms, recognizing patterns, and optimizing moves taught me that every complex problem can be broken into smaller, manageable steps."
+      body2="The best part isn't finishing the cube—it's watching chaos turn into order one move at a time."
     />
   );
 }
@@ -145,22 +145,23 @@ export function HobbyPCBuilding() {
 export function HobbyTroubleshooting() {
   // Terminal-style extra
   const lines = [
-    "$ npm run dev",
-    "> Error: cannot read property 'map' of undefined",
-    "$ git blame — commit a3f2c1",
-    "$ git stash && git pull origin main",
-    "> ✓ Server running on localhost:3000",
+    "$ npm run build",
+    "> Error: Module not found",
+    "$ check imports",
+    "$ verify environment variables",
+    "$ rebuild project",
+    "> ✓ Build completed successfully",
   ];
   return (
     <HobbySection
       id="troubleshooting"
       label="Hobby — Troubleshooting"
       line1="If it's broken,"
-      line2="I will fix it."
+      line2="I want to know why."
       accentLine={2}
       bg="var(--bg-primary)"
-      body1="Debugging is just structured problem-solving with stakes. I've spent hours tracing stack traces, reading kernel logs, and reproducing edge cases that 'should never happen.'"
-      body2="The moment a fix clicks — that's better than shipping new features."
+      body1="Whether it's a software bug, a network issue, or a system behaving unexpectedly, I enjoy digging into the root cause. Troubleshooting has taught me patience, attention to detail, and the importance of asking the right questions before jumping to solutions."
+      body2="Finding the actual cause of a problem is often more rewarding than solving the problem itself."
       extra={
         <div
           className="border px-6 py-5 max-w-lg font-mono text-xs sm:text-sm leading-loose"
@@ -177,91 +178,47 @@ export function HobbyTroubleshooting() {
   );
 }
 
-export function HobbyPCB() {
+export function HobbyContentCreator() {
   return (
     <HobbySection
-      id="pcb-explorer"
-      label="Hobby — PCB Explorer"
-      line1="Circuits are"
-      line2="code in copper."
+      id="infotainment-content-creator"
+      label="Hobby — Infotainment Content Creator"
+      line1="Technology becomes powerful"
+      line2="when people understand it."
       accentLine={2}
       bg="var(--bg-surface)"
-      body1="I started exploring PCBs when I realised software without hardware is only half the story. Tracing signal paths on a board is like reading assembly — tedious until suddenly it all makes sense."
-      body2="I understand enough to read schematics, test with a multimeter, and know when a capacitor is the wrong value."
+      body1="I enjoy creating content that makes technology, cybersecurity, and digital trends easier to understand. Breaking down complex topics into engaging, digestible stories is a challenge that combines creativity with technical knowledge."
+      body2="The goal isn't just to inform—it's to make people curious enough to learn more."
     />
   );
 }
 
-export function HobbyPlayStation() {
+export function HobbyDancer() {
   return (
     <HobbySection
-      id="playstation"
-      label="Hobby — PlayStation"
-      line1="Games taught me"
-      line2="systems thinking."
+      id="dancer"
+      label="Hobby — Dancer"
+      line1="Movement is another"
+      line2="form of expression."
       accentLine={2}
       bg="var(--bg-primary)"
-      body1="Every game is a system with rules, feedback loops, and emergent complexity. Playing seriously taught me to look for patterns, test hypotheses, and iterate — long before I wrote code."
-      body2="Also: the DualSense controller has the best haptics ever made. That's a fact."
+      body1="Dance taught me discipline, confidence, and consistency. Every routine starts with repetition, refinement, and countless small improvements—the same mindset that applies to coding and problem-solving."
+      body2="There's something satisfying about turning practice into performance and ideas into motion."
     />
   );
 }
 
-export function HobbyOrigami() {
+export function HobbyVideoEditor() {
   return (
     <HobbySection
-      id="origami"
-      label="Hobby — Origami"
-      line1="Precision"
-      line2="is a practice."
+      id="video-editor"
+      label="Hobby — Video Editor"
+      line1="Every frame"
+      line2="tells a story."
       accentLine={2}
       bg="var(--bg-surface)"
-      body1="Origami is pure precision — one wrong fold and the whole structure is compromised. It's taught me patience, spatial reasoning, and that constraints aren't limitations; they're design."
-      body2="A finished crane from 25 careful folds beats a rushed one every time. Same goes for code."
-    />
-  );
-}
-
-export function Hobby3DArtist() {
-  return (
-    <HobbySection
-      id="3d-artist"
-      label="Hobby — 3D Art"
-      line1="Every mesh starts"
-      line2="with one vertex."
-      accentLine={2}
-      bg="var(--bg-primary)"
-      body1="I got into 3D art through Blender — originally to make assets for a game idea that never launched. The idea died; the obsession with topology and lighting didn't."
-      body2="There's a parallel between good 3D modeling and good software architecture: clean underlying structure makes everything built on top look better."
-    />
-  );
-}
-
-export function HobbyArtist2D() {
-  return (
-    <HobbySection
-      id="2d-illustration"
-      label="Hobby — 2D Illustration"
-      line1="Drawing is"
-      line2="thinking made visible."
-      accentLine={2}
-      bg="var(--bg-surface)"
-      body1="I sketch interfaces, UI concepts, and character ideas. It's the fastest way to prototype — faster than Figma, faster than code. A pen and paper remain my best design tool."
-    />
-  );
-}
-
-export function HobbySkater() {
-  return (
-    <HobbySection
-      id="skating"
-      label="Hobby — Skating"
-      line1="Fall. Get up."
-      line2="Try again."
-      accentLine={2}
-      bg="var(--bg-primary)"
-      body1="Skating is just iteration with consequences. You try a trick, you fall, you figure out what went wrong, you try again. That loop is identical to debugging — just faster and more painful."
-      body2="The discipline of skating translated directly into how I approach hard technical problems."
+      body1="Video editing is where creativity meets precision. From pacing and transitions to sound design and visual flow, I enjoy shaping raw footage into content that captures attention and communicates a message effectively."
+      body2="Much like software development, great editing often goes unnoticed—it simply feels seamless."
     />
   );
 }
@@ -271,7 +228,7 @@ export function HobbyPhilosophy() {
     <section
       id="philosophy"
       className="chapter-section flex-col justify-center overflow-hidden"
-      style={{ background: "var(--bg-surface)", minHeight: "100svh" }}
+      style={{ background: "var(--bg-primary)", minHeight: "100svh" }}
     >
       <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 py-20 flex flex-col justify-center">
 
@@ -295,9 +252,9 @@ export function HobbyPhilosophy() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(3rem, 12vw, 12rem)", color: "var(--text-primary)" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)" }}
           >
-            Eager to learn
+            Relentless by Nature.
           </motion.h2>
         </div>
         <div className="overflow-hidden mb-2">
@@ -307,9 +264,9 @@ export function HobbyPhilosophy() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(3rem, 12vw, 12rem)", color: "var(--text-primary)" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)" }}
           >
-            &amp; master
+            Driven by Challenge.
           </motion.h2>
         </div>
         <div className="overflow-hidden mb-14">
@@ -319,9 +276,9 @@ export function HobbyPhilosophy() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(3rem, 12vw, 12rem)", color: "var(--accent)" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--accent)" }}
           >
-            everything.
+            Focused on Excellence.
           </motion.h2>
         </div>
 
@@ -343,17 +300,37 @@ export function HobbyPhilosophy() {
           className="body-copy text-lg max-w-xl mb-2"
           style={{ color: "var(--text-secondary)" }}
         >
-          Not a tagline. Not a resume bullet.
+          Not a slogan. Just a mindset.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.6 }}
+          className="body-copy text-base max-w-xl mb-2"
+          style={{ color: "var(--text-muted)" }}
+        >
+          I enjoy solving difficult problems, learning new technologies, and turning ideas into reality.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.7 }}
+          className="body-copy text-base max-w-xl mb-2"
+          style={{ color: "var(--text-muted)" }}
+        >
+          I don&apos;t settle for what&apos;s comfortable. I keep moving forward.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.8 }}
           className="body-copy text-base max-w-xl mb-14"
           style={{ color: "var(--text-muted)" }}
         >
-          It&apos;s just how I work. You&apos;ve seen it across every chapter.
+          Because the next challenge is where the real growth happens.
         </motion.p>
 
         {/* CTAs */}
@@ -361,7 +338,7 @@ export function HobbyPhilosophy() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.75 }}
+          transition={{ duration: 0.7, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4"
         >
           <a

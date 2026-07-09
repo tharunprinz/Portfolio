@@ -8,8 +8,8 @@ import ShaderBackground from "@/components/ui/shader-background";
 const SOCIALS = [
   {
     label: "GitHub",
-    handle: "@RATHAN005",
-    href: "https://github.com/RATHAN005",
+    handle: "@tharunprinz",
+    href: "https://github.com/tharunprinz",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
@@ -18,8 +18,8 @@ const SOCIALS = [
   },
   {
     label: "LinkedIn",
-    handle: "Rathan K",
-    href: "https://www.linkedin.com/in/rathan-k-52747b292/",
+    handle: "tharun021",
+    href: "https://linkedin.com/in/tharun021",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -28,8 +28,8 @@ const SOCIALS = [
   },
   {
     label: "Instagram",
-    handle: "rathan_05_",
-    href: "https://www.instagram.com/rathan_005_/",
+    handle: "@thxrun21",
+    href: "https://www.instagram.com/thxrun21/",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
@@ -37,22 +37,22 @@ const SOCIALS = [
     ),
   },
   {
-    label: "LeetCode",
-    handle: "rathan005",
-    href: "https://leetcode.com/u/RATHAN05/",
+    label: "YouTube",
+    handle: "@tharunr21",
+    href: "https://www.youtube.com/@tharunr21",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
       </svg>
     ),
   },
   {
-    label: "PlayStation",
-    handle: "RATHAN_005",
-    href: "https://psnprofiles.com/RATHAN_05",
+    label: "Email",
+    handle: "tharunr2121",
+    href: "mailto:tharunr2121@gmail.com",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M8.984 2.596v14.47l3.915 1.338V6.688c0-.676.3-1.152.78-.993.612.179.735.806.735 1.482v5.94l3.914 1.338V7.757c0-3.006-1.86-4.363-4.574-5.312-1.03-.358-2.9-.81-5.77-.985zm-.785 15.43L3.01 19.984c-.584.14-.786-.186-.786-.517v-1.22c0-.628.532-1.302 1.178-1.518l4.797-1.58v2.877zm11.794-2.75c-1.96.026-3.565.448-3.565.448L14.17 16.8v2.87l5.994-2.045c.58-.2 1.046-.85 1.046-1.438 0-.49-.388-.915-1.217-.91z" />
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
       </svg>
     ),
   },
@@ -97,9 +97,9 @@ export default function Footer() {
                 animate={isInView ? { y: 0 } : {}}
                 transition={{ duration: 1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
                 className="chapter-title leading-[0.86]"
-                style={{ fontSize: "clamp(3.5rem, 14vw, 15rem)", color: "var(--text-primary)" }}
+                style={{ fontSize: "clamp(2.5rem, 10vw, 10rem)", color: "var(--text-primary)" }}
               >
-                Let&apos;s build
+                Have an Idea?
               </motion.h2>
             </div>
             <div className="overflow-hidden mb-12">
@@ -108,15 +108,15 @@ export default function Footer() {
                 animate={isInView ? { y: 0 } : {}}
                 transition={{ duration: 1, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
                 className="chapter-title leading-[0.80]"
-                style={{ fontSize: "clamp(3.5rem, 14vw, 15rem)", color: "var(--accent)" }}
+                style={{ fontSize: "clamp(2.5rem, 10vw, 10rem)", color: "var(--accent)" }}
               >
-                Together.
+                Let&apos;s Make It Real
               </motion.h2>
             </div>
 
             {/* Email link */}
             <motion.a
-              href="mailto:rathan14705@gmail.com"
+              href="mailto:tharunr2121@gmail.com"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.45 }}
@@ -126,7 +126,7 @@ export default function Footer() {
                 className="relative text-lg sm:text-xl md:text-2xl font-light transition-opacity duration-300 group-hover:opacity-60"
                 style={{ color: "var(--text-secondary)", fontFamily: "var(--font-body)" }}
               >
-                rathan14705@gmail.com
+                tharunr2121@gmail.com
                 <span
                   className="absolute -bottom-1 left-0 w-full h-px scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
                   style={{ background: "var(--accent)" }}
@@ -188,7 +188,7 @@ export default function Footer() {
                 className="chapter-title text-sm tracking-tight"
                 style={{ color: "var(--text-muted)", opacity: 0.3 }}
               >
-                RATHAN K
+                THARUN R
               </span>
               <span
                 className="text-[10px] tracking-[0.2em] uppercase"
