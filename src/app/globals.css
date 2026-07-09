@@ -154,17 +154,6 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* GPU layer promotion — prevents scroll-triggered repaints */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  /* Isolate paint/layout so siblings don't re-paint on scroll */
-  contain: layout style;
-}
-
-/* Pre-promote animated heading wrappers to compositor layers */
-.chapter-section .overflow-hidden {
-  transform: translateZ(0);
-  will-change: transform;
 }
 
 /* ──────────────────────────────────────────────

@@ -17,16 +17,6 @@ interface HobbyProps {
   extra?: React.ReactNode;
 }
 
-/*
-  Performance notes:
-  - viewport margin "-200px" → animations start loading 200px before
-    the section scrolls into view, eliminating the "pop-in" lag.
-  - All animations use only `opacity` + `transform` (y / scaleX) —
-    compositor-only properties that never trigger layout or paint.
-  - `will-change` is applied via CSS on .chapter-section .overflow-hidden
-    so the browser pre-allocates GPU layers.
-*/
-
 function HobbySection({
   id,
   label,
@@ -48,10 +38,10 @@ function HobbySection({
 
         {/* Overline */}
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-200px 0px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="text-[11px] tracking-[0.55em] uppercase mb-8"
           style={{ color: "var(--accent)", fontFamily: "var(--font-body)" }}
         >
@@ -61,15 +51,14 @@ function HobbySection({
         {/* Line 1 */}
         <div className="overflow-hidden mb-1">
           <motion.h2
-            initial={{ y: "101%" }}
+            initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
             style={{
               fontSize: "clamp(2.5rem, 9vw, 9rem)",
               color: accentLine === 1 ? "var(--accent)" : "var(--text-primary)",
-              willChange: "transform",
             }}
           >
             {line1}
@@ -79,15 +68,14 @@ function HobbySection({
         {/* Line 2 */}
         <div className="overflow-hidden mb-12">
           <motion.h2
-            initial={{ y: "101%" }}
+            initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.75, delay: 0.06, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
             style={{
               fontSize: "clamp(2.5rem, 9vw, 9rem)",
               color: accentLine === 2 ? "var(--accent)" : "var(--text-primary)",
-              willChange: "transform",
             }}
           >
             {line2}
@@ -98,18 +86,18 @@ function HobbySection({
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.7, delay: 0.18, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.25 }}
           className="h-px w-full max-w-xs mb-10 origin-left"
-          style={{ background: "var(--border)", willChange: "transform" }}
+          style={{ background: "var(--border)" }}
         />
 
         {/* Body */}
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.55, delay: 0.26, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.35 }}
           className="body-copy text-lg sm:text-xl max-w-2xl mb-4"
           style={{ color: "var(--text-secondary)" }}
         >
@@ -118,10 +106,10 @@ function HobbySection({
 
         {body2 && (
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.55, delay: 0.34, ease: "easeOut" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.45 }}
             className="body-copy text-base max-w-xl"
             style={{ color: "var(--text-muted)" }}
           >
@@ -131,10 +119,10 @@ function HobbySection({
 
         {extra && (
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.55, delay: 0.42, ease: "easeOut" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.55 }}
             className="mt-10"
           >
             {extra}
@@ -256,10 +244,10 @@ export function HobbyPhilosophy() {
 
         {/* Overline */}
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-200px 0px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="text-[11px] tracking-[0.55em] uppercase mb-12"
           style={{ color: "var(--text-muted)", fontFamily: "var(--font-body)" }}
         >
@@ -269,36 +257,36 @@ export function HobbyPhilosophy() {
         {/* Giant statement */}
         <div className="overflow-hidden mb-2">
           <motion.h2
-            initial={{ y: "101%" }}
+            initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)", willChange: "transform" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)" }}
           >
             Relentless by Nature.
           </motion.h2>
         </div>
         <div className="overflow-hidden mb-2">
           <motion.h2
-            initial={{ y: "101%" }}
+            initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.85, delay: 0.06, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)", willChange: "transform" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--text-primary)" }}
           >
             Driven by Challenge.
           </motion.h2>
         </div>
         <div className="overflow-hidden mb-14">
           <motion.h2
-            initial={{ y: "101%" }}
+            initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-180px 0px" }}
-            transition={{ duration: 0.85, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
             className="chapter-title leading-[0.88]"
-            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--accent)", willChange: "transform" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 8rem)", color: "var(--accent)" }}
           >
             Focused on Excellence.
           </motion.h2>
@@ -308,47 +296,47 @@ export function HobbyPhilosophy() {
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="h-px w-full max-w-xs mb-10 origin-left"
-          style={{ background: "var(--border)", willChange: "transform" }}
+          style={{ background: "var(--border)" }}
         />
 
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.5, delay: 0.38, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.5 }}
           className="body-copy text-lg max-w-xl mb-2"
           style={{ color: "var(--text-secondary)" }}
         >
           Not a slogan. Just a mindset.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.5, delay: 0.44, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.6 }}
           className="body-copy text-base max-w-xl mb-2"
           style={{ color: "var(--text-muted)" }}
         >
           I enjoy solving difficult problems, learning new technologies, and turning ideas into reality.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.7 }}
           className="body-copy text-base max-w-xl mb-2"
           style={{ color: "var(--text-muted)" }}
         >
           I don&apos;t settle for what&apos;s comfortable. I keep moving forward.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.5, delay: 0.56, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.8 }}
           className="body-copy text-base max-w-xl mb-14"
           style={{ color: "var(--text-muted)" }}
         >
@@ -357,10 +345,10 @@ export function HobbyPhilosophy() {
 
         {/* CTAs */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-180px 0px" }}
-          transition={{ duration: 0.5, delay: 0.62, ease: "easeOut" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4"
         >
           <a
