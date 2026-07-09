@@ -10,19 +10,16 @@ export interface ChapterMeta {
 }
 
 const CHAPTERS: ChapterMeta[] = [
-  { id: "who-i-am",       label: "Who I Am",               accent: "#e8734a" },
-  { id: "what-drives-me", label: "What Drives Me",         accent: "#3B82F6" },
-  { id: "skills-tools",   label: "Skills & Tools",         accent: "#22C55E" },
-  { id: "beyond-screen",  label: "Beyond the Screen",      accent: "#FBBF80" },
-  { id: "pc-building",    label: "PC Building",            accent: "#3B82F6" },
-  { id: "troubleshooting",label: "Troubleshooting",        accent: "#F59E0B" },
-  { id: "pcb-explorer",   label: "PCB Explorer",           accent: "#22C55E" },
-  { id: "playstation",    label: "PlayStation",            accent: "#006FCD" },
-  { id: "origami",        label: "Origami",                accent: "#FBBF80" },
-  { id: "3d-artist",      label: "3D Artist",              accent: "#A855F7" },
-  { id: "artist-2d",      label: "2D Illustration",        accent: "#e8734a" },
-  { id: "skater",         label: "Skater",                 accent: "#D4FF00" },
-  { id: "philosophy",     label: "Eager to Master",        accent: "#f0ece4" },
+  { id: "who-i-am",                     label: "Who I Am",                    accent: "#e8734a" },
+  { id: "what-drives-me",               label: "What Drives Me",              accent: "#e8734a" },
+  { id: "skills-tools",                 label: "Skills & Tools",              accent: "#e8734a" },
+  { id: "beyond-screen",                label: "Beyond the Screen",           accent: "#e8734a" },
+  { id: "rubiks-cube-solver",           label: "Rubik's Cube Solver",         accent: "#e8734a" },
+  { id: "troubleshooting",              label: "Troubleshooting",             accent: "#e8734a" },
+  { id: "infotainment-content-creator", label: "Content Creator",             accent: "#e8734a" },
+  { id: "dancer",                       label: "Dancer",                      accent: "#e8734a" },
+  { id: "video-editor",                 label: "Video Editor",                accent: "#e8734a" },
+  { id: "philosophy",                   label: "Eager to Master",             accent: "#e8734a" },
 ];
 
 export default function ChapterNav() {

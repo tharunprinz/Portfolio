@@ -42,9 +42,8 @@ export default function Home() {
       </div>
 
       {/* ── Hobbies Chapters ────────────────────────────
-          PC Building · Troubleshooting · PCB Explorer
-          PlayStation · Origami · 3D Artist
-          2D Illustration · Skater · Philosophy
+          Rubik's Cube Solver · Troubleshooting · Content Creator
+          Dancer · Video Editor · Philosophy
       ─────────────────────────────────────────────── */}
       <HobbiesChapters />
 

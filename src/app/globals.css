@@ -23,47 +23,47 @@
   --font-body:    var(--font-manrope),"Manrope", system-ui, sans-serif;
 
   /* Hobbies Chapter Themes */
-  --chapter-electric: #3b82f6;
-  --chapter-amber:    #f59e0b;
-  --chapter-circuit:  #22c55e;
-  --chapter-ps:       #006fcd;
-  --chapter-blush:    #fbbf80;
-  --chapter-violet:   #a855f7;
+  --chapter-electric: #e8734a;
+  --chapter-amber:    #e8734a;
+  --chapter-circuit:  #e8734a;
+  --chapter-ps:       #e8734a;
+  --chapter-blush:    #e8734a;
+  --chapter-violet:   #e8734a;
   --chapter-coral:    #e8734a;
-  --chapter-acid:     #d4ff00;
+  --chapter-acid:     #e8734a;
   --accent-warm:      #e8734a;
-  --accent-coral:     #ff6b6b;
-  --accent-amber:     #fbbf24;
+  --accent-coral:     #ff855f;
+  --accent-amber:     #ffb84d;
 }
 
 /* Custom text gradients for premium hobby sections */
 .text-gradient-electric {
-  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  background: linear-gradient(90deg, var(--accent), #ff855f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient-amber {
-  background: linear-gradient(90deg, #f59e0b, #e8734a);
+  background: linear-gradient(90deg, var(--accent), #ffb84d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient-circuit {
-  background: linear-gradient(90deg, #22c55e, #10b981);
+  background: linear-gradient(90deg, var(--accent), #ff855f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient-ps {
-  background: linear-gradient(90deg, #006fcd, #3b82f6);
+  background: linear-gradient(90deg, var(--accent), #ff855f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient-violet {
-  background: linear-gradient(90deg, #a855f7, #ec4899);
+  background: linear-gradient(90deg, var(--accent), #ff855f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient {
-  background: linear-gradient(135deg, var(--accent), #fbbf24);
+  background: linear-gradient(135deg, var(--accent), #ffb84d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

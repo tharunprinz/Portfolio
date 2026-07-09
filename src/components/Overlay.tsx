@@ -118,8 +118,9 @@ function OverlaySection({
           >
             Portfolio 2026
           </motion.p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight text-gradient">
-            {section.title}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight" style={{ color: "var(--text-primary)" }}>
+            <span style={{ color: "var(--accent)" }}>Tharun R</span>
+            <span style={{ color: "var(--text-primary)" }}>.</span>
           </h1>
           {section.subtitle && (
             <p
