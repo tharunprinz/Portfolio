@@ -7,7 +7,7 @@ export default function ChapterWhoIAm() {
   const ref = useRef<HTMLElement>(null);
   const prefersReducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], prefersReducedMotion ? ["0%","0%"] : ["0%","12%"]);
+  const y = useTransform(scrollYProgress, [0, 1], prefersReducedMotion ? ["0%", "0%"] : ["0%", "12%"]);
 
   return (
     <section
@@ -106,8 +106,8 @@ export default function ChapterWhoIAm() {
             className="flex flex-row lg:flex-col gap-10 lg:gap-8 shrink-0"
           >
             {[
-              { value: "7.1",     label: "CGPA" },
-              { value: "10+",      label: "Projects" },
+              { value: "7.3", label: "CGPA" },
+              { value: "10+", label: "Projects" },
               { value: "2023-27", label: "B.Tech IT" },
             ].map((s, i) => (
               <div key={s.label} className="flex flex-col gap-1">
