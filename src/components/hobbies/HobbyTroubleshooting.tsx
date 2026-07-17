@@ -128,7 +128,7 @@ export default function HobbyTroubleshooting() {
               <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
               <div className="w-3 h-3 rounded-full bg-green-500/60" />
               <span className="ml-3 text-xs font-mono" style={{ color: "rgba(245,158,11,0.5)" }}>
-                rathan@debug ~ bash
+                tharunprinz@debug ~ bash
               </span>
             </div>
             {/* Log lines */}
