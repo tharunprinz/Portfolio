@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Syne, Manrope } from "next/font/google";
 import "./globals.css";
 
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
@@ -44,6 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable} ${manrope.variable} antialiased`}>
+      <meta name="google-site-verification" content="G21jdSW07mkG23FloQnURCX-c7nMBKP7o-Un88h4-Ls" />
       <body className="min-h-screen bg-background text-foreground font-sans overflow-x-hidden">
         {children}
       </body>
